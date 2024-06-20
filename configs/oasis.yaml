@@ -1,5 +1,5 @@
-raw_data_dir: /home/fguarnera_shared/data_1T/registered_oasis_t1/pairwise_dataset/
-binary_data_dir: /home/fguarnera_shared/data_1T/registered_oasis_t1/pairwise_dataset/
+raw_data_dir: PATH_TO_DATA
+binary_data_dir: PATH_TO_DATA
 sr_scale: 1
 eval_batch_size: 20
 test_batch_size: 20
