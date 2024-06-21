@@ -1,0 +1,7 @@
+base_config:
+  - ./diffsr_base.yaml
+  - ./oasis.yaml
+trainer_cls: tasks.srdiff_oasis.SRDiffOasis
+batch_size: 32
+max_updates: 300000
+task: srdiff
