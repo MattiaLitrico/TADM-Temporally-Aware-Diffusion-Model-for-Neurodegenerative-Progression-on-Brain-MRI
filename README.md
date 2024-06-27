@@ -10,7 +10,7 @@ Generating realistic images to accurately predict changes in the structure of br
 
 ## Data Preparation
 
-1. Please download the already prepared data at this link and put it under ```${DATA_ROOT}```.
+1. Please download the already prepared data at this [link](https://iplab.dmi.unict.it/mfs/pairwise_oasis.zip) and put it under ```${DATA_ROOT}```.
 2. In the file configs/oasis.yaml change "PATH_TO_DATA" with ```${DATA_ROOT}```.
 
 ##  Training
