@@ -10,8 +10,10 @@ Generating realistic images to accurately predict changes in the structure of br
 
 ## Data Preparation
 
-1. Please download the already prepared data at this [link](https://iplab.dmi.unict.it/mfs/pairwise_oasis.zip) and put it under ```${DATA_ROOT}```.
-2. In the file configs/oasis.yaml change "PATH_TO_DATA" with ```${DATA_ROOT}```.
+1. Please submit the application for downloading the OASIS dataset at this [link](https://www.oasis-brains.org/#data) and put it under ```${DATA_ROOT}```.
+2. From the OASIS dataset, download also the OASIS3_participant_data.xlsx and the OASIS3_patients_conditions.txt files and put them in the configs dir.
+3. In the file configs/oasis.yaml change "PATH_TO_DATA" with ```${DATA_ROOT}```.
+4. For each patient with multiple scans, create a subdir for each of all the possible pairs of patient scans. For example, if a patient has three scans acquired at timestamps t1, t2 and t3, create three subdirs t1_t2, t1_t3, t2_t3 containing the scans acquired at the respective timestamps.
 
 ##  Training
 
