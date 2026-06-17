@@ -48,16 +48,48 @@ To make inference on the test dataset use the following command:
 # testing the DDPM model
 python tasks/trainer.py --config configs/diffsr_oasis.yaml --exp_name srdiff_pretrained_Oasis --hparams=bae_ckpt=checkpoints/bae_Oasis --infer 
 ```
+
+## Extension: TADM-3D (CMIG 2025)
+
+This work has been extended in our subsequent journal paper:
+
+> **Temporally-Aware Diffusion Model for Brain Progression Modelling with Bidirectional Temporal Regularisation**  
+> *Computerized Medical Imaging and Graphics (CMIG), 2025*
+
+The extension introduces:
+
+- Full **3D MRI volume modelling** instead of 2D slice-based processing
+- **Back-In-Time Regularisation (BITR)** for bidirectional temporal consistency
+- Evaluation on the external **NACC** dataset
+- Improved modelling of longitudinal neurodegenerative progression
+
+📄 **Paper:** https://www.sciencedirect.com/science/article/pii/S0895611125001971
+
+💻 **Code:** https://github.com/MattiaLitrico/TADM-3D
+
 ## Citing
 
 If you want to cite our work, please use the following bibtex:
 
-```
+### MICCAI 2024
+
+```bibtex
 @inproceedings{litrico_2024_MICCAI,
   title={TADM: Temporally-Aware Diffusion Model for Neurodegenerative Progression on Brain MRI},
   author={Litrico, Mattia and Guarnera, Francesco and Giuffrida, Valerio and Ravì, Daniele and Battiato, Sebastiano},
   booktitle={Medical Image Computing and Computer Assisted Intervention - {MICCAI}},
   year={2024}
+}
+```
+
+### CMIG 2025 (TADM-3D)
+
+```bibtex
+@article{litrico2025tadm3d,
+  title={Temporally-Aware Diffusion Model for Brain Progression Modelling with Bidirectional Temporal Regularisation},
+  author={Litrico, Mattia and Guarnera, Francesco and Giuffrida, Mario Valerio and Rav{\`i}, Daniele and Battiato, Sebastiano},
+  journal={Computerized Medical Imaging and Graphics},
+  year={2025}
 }
 ```
 
